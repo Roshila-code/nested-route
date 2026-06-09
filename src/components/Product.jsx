@@ -1,31 +1,26 @@
-import { Link } from "react-router-dom";
-
-function Products({ list }) {
+import { Link } from 'react-router-dom'
+function Product({ list }) {
   return (
     <div>
       <h2>Product List</h2>
-
       <div className="product-list">
-        {list.map((product) => (
+      {
+        list.map((product) => (
           <div key={product.id} className="product-item">
             <h3>{product.name}</h3>
 
-            <img
-              src={product.image}
-              alt={product.name}
-              width={150}
-            />
+             <img src={`${import.meta.env.BASE_URL}image/${product.image}`}alt={product.name} width={150} />
 
             <p>{product.price}</p>
-
-            <Link to={`/productlist/${product.id}`}>
-              View Detail
-            </Link>
+            <Link to={`/productlist/${product.id}`}>View Detail</Link>
+        
           </div>
-        ))}
-      </div>
+        ))
+      }
     </div>
-  );
+    </div>
+  )
 }
 
-export default Products;
+export default Product;
+
