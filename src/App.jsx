@@ -11,12 +11,10 @@ import Settings from './components/Settings';
 
 
  const products = [
-  {id : 1, name:"Laptop",price:1200, image:"/image/laptop.png"},
-   { id : 2, name:"keyboard",price:100, image:"/image/keyboard.png"},
-    {id : 3, name:"Mouse",price:200, image:"/image/mouse.png"}
-  
-]
-  
+  { id: 1, name: "Laptop", price: 1200, image: "laptop.png" },
+  { id: 2, name: "keyboard", price: 100, image: "keyboard.png" },
+  { id: 3, name: "Mouse", price: 200, image: "mouse.png" }
+];
 
 
 const Home = () => <h2>Welcome to my Home</h2>
